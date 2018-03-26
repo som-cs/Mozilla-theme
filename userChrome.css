@@ -1,0 +1,73 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* set default namespace to XUL */
+
+.panel-subview-body {
+  background-color: #131C29;
+}
+
+.subviewbutton {
+  color: #ffffff;
+}
+
+.toolbaritem-combined-buttons {
+  color: #efefef;
+}
+
+.customization-target, #TabsToolbar, #navigator-toolbox {
+  background-color: #141415 !important;
+}
+
+#urlbar:-moz-lwtheme, #navigator-toolbox .searchbar-textbox:-moz-lwtheme {
+  background: linear-gradient(270deg, #141415, #313640);
+  animation: gradient 10s ease infinite;
+  background-size: 400% 400%;
+}
+
+#urlbar:not([focused="true"]):-moz-lwtheme, #navigator-toolbox .searchbar-textbox:not([focused="true"]):-moz-lwtheme {
+  border: 3px solid #00A0FF99 !important;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+.panel-viewcontainer {
+  color: #ffffff;
+}
+
+.tab-content {
+  border: 2px solid #008FE5;
+  border-style: none solid none none;
+}
+
+.tab-stack {
+  background-color: #151A21;
+}
+
+.tab-stack:hover {
+  background-color: #000000;
+}
+
+.titlebar-placeholder[type="pre-tabs"] {
+  border-inline-end: none;
+}
+
+.toolbarbutton-animatable-box[brighttext], toolbar[brighttext] .toolbarbutton-animatable-box, toolbar[brighttext] .toolbarbutton-1 {
+  fill: #01efff !important;
+}
+
+#navigator-toolbox>toolbar:not(#TabsToolbar):not(#toolbar-menubar), .browserContainer>findbar, #browser-bottombox {
+  background-color: #141415 !important;
+}
+
+.downloadsPanelFooterButton,richlistitem[type="download"]{
+  color:#000000 !important;
+}

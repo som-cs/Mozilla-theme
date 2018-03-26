@@ -1,0 +1,34 @@
+@-moz-document url("about:newtab") {
+  body {
+    background-color: #141415 !important;
+  }
+  .top-sites {
+    background-color: #212121;
+    border-radius: 1rem;
+  }
+  span{
+    color:#989898;
+  }
+  .top-site-outer .top-site-icon{
+    background-color: transparent !important;
+  }
+  .card-outer > a{
+    color:#717C8A !important;
+  }
+  .card-outer{
+    background: #151A21 !important;
+  }
+  .icon.icon-bookmark-added{
+    background-image: url("https://cdn2.iconfinder.com/data/icons/competition-success/512/star_bookmark_favorite_shape_competitive_trophy_medal_winning_popularity_glory_high_awards_winners_badge_hero_victory_hit_proud_honor_leadership_competition_prize_premium_-512.png") !important;
+  }
+  .collapsible-section{
+    background-color:#212121;
+    border-radius: 1rem;
+  }
+.top-site-outer .tile{
+  color:transparent !important;
+}
+.card-outer:-moz-any(:hover, :focus, .active):not(.placeholder) .card-title{
+  color:#008FE5 !important;
+}
+}
